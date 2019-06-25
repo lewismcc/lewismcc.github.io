@@ -1,0 +1,5 @@
+model,horsepower,drivetrain,displacement,transmission,yearproduced,priceold,image,
+300 sel 6.3,247,front-engine rearwheeldrive,6332,4speed automatic,1968,15122,entry1,
+500 E,5.0,322,front-engine rearwheeldrive,4973,4speed automatic,1991,84759,entry2,
+SLR McLaren,5.4,617,front-midengine rearwheeldrive,5439,5speed automatic,2003,1240000,entry3,
+amg e63s, 4.0,612,front engine allwheeldrive,3982,9speed automatic,2018,106950,entry4,

@@ -1,0 +1,43 @@
+body{
+    height:100%;
+    position: relative;
+    color:  rgb(204, 200, 200);
+    background-color:rgb(156, 156, 156);
+    text-align: center;
+    text-shadow: 1px 1px #757575 ;
+    padding: 0;
+    margin: 0;
+
+}
+.navMenu {
+    position: sticky;
+    background-image: url("/images/wood-texture.jpg");
+    background-size: cover;
+    background-color: rgb(105, 92, 92);
+    padding:12px ;
+    border: 3px solid #757575;
+    margin: 0px;
+    left:0px;
+}
+.main{
+    position: relative;
+    top: 40px;
+}
+a{
+    font-size: 40px;
+    position: relative;
+    margin: -2.5px;
+    text-decoration:none;
+    padding:12px 32px ;
+    border:2px solid #757575; 
+}
+a:active{   
+    color: rgb(204, 200, 200)
+}
+a:visited{
+    color: rgb(204, 200, 200);
+}
+a:hover{
+    background-color: #757575;
+    color: white;
+}
