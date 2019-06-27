@@ -21,8 +21,6 @@ $(document).ready(function(){
 });
 function firstEntry(){
     $(".container").empty();
-    console.log("success");
-    console.log(carDisplay);
     i=0;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
@@ -32,8 +30,7 @@ function firstEntry(){
 };
 function previousEntry(){
     $(".container").empty();
-    console.log("success");
-    console.log(carDisplay);
+
     i= i- 1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
@@ -43,8 +40,6 @@ function previousEntry(){
 };
 function nextEntry(){
     $(".container").empty();
-    console.log("success");
-    console.log(carDisplay);
     i=i+1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
@@ -54,11 +49,10 @@ function nextEntry(){
 };
 function lastEntry(){
     $(".container").empty();
-    console.log("success");
-    console.log(carDisplay);
-    i = carDisplay.Length;
+    i = carDisplay.length - 1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
+
     $(carDiv).append(carModel);
     $(".container").append(carDiv);
         
