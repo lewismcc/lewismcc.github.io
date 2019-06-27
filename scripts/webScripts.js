@@ -1,4 +1,5 @@
 var carDisplay;
+var i=0;
 $(document).ready(function(){   
     $.ajax({
         type:"get",
@@ -11,7 +12,7 @@ $(document).ready(function(){
     })
     function displayInfo(carData){
         carDisplay = $.csv.toObjects(carData);
-        var i=0;
+        i=0;
         let carDiv = $("<div>", {"class":"carDiv"});
         let carModel = $("<h1>").append(carDisplay[i].model);
         $(carDiv).append(carModel);
@@ -22,7 +23,7 @@ function firstEntry(){
     $(".container").empty();
     console.log("success");
     console.log(carDisplay);
-    var i=0;
+    i=0;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
@@ -33,20 +34,7 @@ function previousEntry(){
     $(".container").empty();
     console.log("success");
     console.log(carDisplay);
-    var i=i--;
-    let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append(carDisplay[i].model);
-    $(carDiv).append(carModel);
-    $(".container").append(carDiv);
-        
-};
-
-
-/*function previousEntry(){
-    $(".container").empty();
-    console.log("success");
-    console.log(carDisplay);
-    var i= i--;
+    i= i- 1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
@@ -57,7 +45,7 @@ function nextEntry(){
     $(".container").empty();
     console.log("success");
     console.log(carDisplay);
-    var i=i++;
+    i=i+1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
@@ -68,12 +56,10 @@ function lastEntry(){
     $(".container").empty();
     console.log("success");
     console.log(carDisplay);
-    let temp = carDisplay.length;
-    console.log(temp);
-    let i=4;
+    i = carDisplay.Length;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
     $(".container").append(carDiv);
         
-};*/
+};
