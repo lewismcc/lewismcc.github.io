@@ -29,9 +29,10 @@ function firstEntry(){
         
 };
 function previousEntry(){
+    if(i > 0){
+    i = i-1;
+    }
     $(".container").empty();
-
-    i= i- 1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
@@ -39,13 +40,15 @@ function previousEntry(){
         
 };
 function nextEntry(){
+    if (i < carDisplay.length -1){   
+    i = i+1;
+    }
+    console.log(carDisplay.length);
     $(".container").empty();
-    i=i+1;
     let carDiv = $("<div>", {"class":"carDiv"});
     let carModel = $("<h1>").append(carDisplay[i].model);
     $(carDiv).append(carModel);
-    $(".container").append(carDiv);
-        
+    $(".container").append(carDiv);        
 };
 function lastEntry(){
     $(".container").empty();
