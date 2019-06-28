@@ -1,5 +1,7 @@
 var carDisplay;
 var i=0;
+var slideIndex = 1;
+showSlides(slideIndex)
 $(document).ready(function(){   
     $.ajax({
         type:"get",
@@ -60,3 +62,9 @@ function lastEntry(){
     $(".container").append(carDiv);
         
 };
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+function currentSlide(n){
+    showSlides(slideIndex += n);
+}
