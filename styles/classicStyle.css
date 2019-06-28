@@ -46,7 +46,7 @@ a:hover{
     position:relative;
     margin: auto;
 }
-.slidingFade{
+.mySlides{
     display:none;
 }
 .previous, .next{
