@@ -42,12 +42,10 @@ a:hover{
     background-color: #757575;
     color: white;
 }
-*{box-sizing: border-box}
 .carousel{
     max-width: 800px;
     position:relative;
     margin: auto;
-    box-sizing: border-box;
 }
 .mySlides{
     display:none;

@@ -5,16 +5,17 @@ $(document).ready(function(){
         url:"./data/carInfo.csv",
         datatype:"text",
         success:function(carData){
-            console.log(carData);
             displayInfo(carData)
         }
     })
     function displayInfo(carData){
         carDisplay = $.csv.toObjects(carData);
-        console.log(carDisplay);
         i=0;
         let carDiv = $("<div>", {"class":"carDiv"});
         let carModel = $("<h1>").append(carDisplay[i].model);
+        let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/"+carDisplay[i].model});
+        let carHp = $("<h2>").append(carDisplay[i].horsePower);    
+        let carSize =$("<h2>").
         $(carDiv).append(carModel);
         $(".container").append(carDiv);    
     }    
@@ -60,34 +61,29 @@ function lastEntry(){
     $(".container").append(carDiv);
         
 };
+
 var slideIndex = 1;
 showSlides(slideIndex);
-
-function plusSlides(n){
-    showSlides(slideIndex += n);
-    console.log("plus");
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-function currentSlide(n){
-    showSlides(slideIndex = n);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    var i=0;
-    var slides = document.getElementsByClassName("mySlides");
-    //var dots = document.getElementsByClassName("dot");
-    if (n > slides.length){
-        slideIndex = 1
-    }
-    if (n < 1){
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-  //  for (i = 0; i < dots.length; i++) {
-   //     dots[i].className = 
-  //      dots[i].className.replace(" active", "");
-   // }
-    slides[slideIndex-1].style.display = "block";
-    //dots[slideIndex-1].className += " active";
-  } 
+  var i;
+  var slides= document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  console.log(slideIndex);
+  console.log(slides);
+
+  slides[slideIndex-1].style.display = "block";  
+}
+
+  
