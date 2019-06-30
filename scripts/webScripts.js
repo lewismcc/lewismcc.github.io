@@ -12,20 +12,30 @@ $(document).ready(function(){
         carDisplay = $.csv.toObjects(carData);
         i=0;
         let carDiv = $("<div>", {"class":"carDiv"});
-        let carModel = $("<h1>").append(carDisplay[i].model);
-        let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/"+carDisplay[i].model});
-        let carHp = $("<h2>").append(carDisplay[i].horsePower);    
-        let carSize =$("<h2>").
-        $(carDiv).append(carModel);
+        let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
+        let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
+        let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
+        let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
+        let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
+        let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
+        let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
+        $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
         $(".container").append(carDiv);    
     }    
 });
+//#region 
 function firstEntry(){
     $(".container").empty();
     i=0;
     let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append(carDisplay[i].model);
-    $(carDiv).append(carModel);
+    let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
+    let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
+    let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
+    let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
+    let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
+    let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
+    let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
+    $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
     $(".container").append(carDiv);
         
 };
@@ -35,8 +45,14 @@ function previousEntry(){
     }
     $(".container").empty();
     let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append(carDisplay[i].model);
-    $(carDiv).append(carModel);
+    let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
+    let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
+    let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
+    let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
+    let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
+    let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
+    let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
+    $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
     $(".container").append(carDiv);
         
 };
@@ -47,21 +63,33 @@ function nextEntry(){
     console.log(carDisplay.length);
     $(".container").empty();
     let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append(carDisplay[i].model);
-    $(carDiv).append(carModel);
+    let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
+    let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
+    let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
+    let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
+    let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
+    let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
+    let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
+    $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
     $(".container").append(carDiv);        
 };
 function lastEntry(){
     $(".container").empty();
     i = carDisplay.length - 1;
     let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append(carDisplay[i].model);
-
-    $(carDiv).append(carModel);
+    let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
+    let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
+    let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
+    let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
+    let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
+    let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
+    let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
+    $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
     $(".container").append(carDiv);
         
 };
-
+//#endregion
+//#region 
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -85,5 +113,5 @@ function showSlides(n) {
 
   slides[slideIndex-1].style.display = "block";  
 }
-
+//#endregion
   
