@@ -26,12 +26,19 @@
         <input type="button" value="previous" class="buttonSwitcher" onclick="previousEntry()" />
         <input type="button" value="next" class="buttonSwitcher" onclick="nextEntry()" />
         <input type="button" value="last" class="buttonSwitcher" onclick="lastEntry()" />
-        <input type ="button" value= "Have A suggestion?" class="suggestionButton" onclick="openForm()"/>
+
+        <input type="button" class="openButton" onclick="openForm()" value="Open">
         <div class="popUp" id="popUp">
             <form class="formContainer">
                 <h1>Suggestion?</h1>
-                <label type="text" aria-placeholder="Enter car name" name="car" required >
-                    
+
+                <label for="email"><b>email</b></label>
+                <input type="text" aria-placeholder="Enter E-mail" name="email" required />
+
+                <label for= "carName"><b>have a car to add?</b></label>
+                <input type="text" aria-placeholder="Have a suggestion?" name="carName" required/> 
+                <input type="submit" class="btn" value="Submit" onlick="infoSubmit()">
+                <input type="submit" class="btn cancel" value="Close" onclick="closeForm()">
             </form>
         </div>
     </div>

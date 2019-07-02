@@ -1,7 +1,6 @@
 var carDisplay;
 $(document).ready(function(){ 
-    showSlides(slideIndex);  
-
+   
     $.ajax({
         type:"get",
         url:"./data/carInfo.csv",
@@ -88,33 +87,13 @@ function lastEntry(){
     let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
     $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
     $(".container").append(carDiv);
-        
+     
+      
 };
 //#endregion
-//#region 
-var slideIndex = 1;
-
-function plusSlides(n) { 
-  showSlides(slideIndex += n);
+function openForm(){
+    document.getElementById("popUp").style.display ="block";
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function closeForm(){
+    document.getElementById("popUp").style.display ="none";
 }
-
-function showSlides(n) {
-  var i;
-  var slides= document.getElementsByClassName("mySlides");
-  console.log(slides);
-  
-
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  console.log("slide index: "+slideIndex);
-  slides[slideIndex-1].style.display = "block";  
-}
-//#endregion
-  
