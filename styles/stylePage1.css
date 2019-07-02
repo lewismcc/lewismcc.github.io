@@ -47,7 +47,23 @@ a:hover{
     width:50px;
     left:2px;
 }
-
+.cataloguePage{
+    background-color: #757575;
+    color: white;
+    border: 3px solid #808080;
+}
+.homePage{
+    background-color: #757575;
+    color: white;
+}
+.dealerPage{
+    background-color: #757575;
+    color: white;
+}
+.aboutPage{
+    background-color: #757575;
+    color: white;
+}
 /*navmenu*/ 
 .svgimage{
     top:100px;
@@ -96,22 +112,24 @@ a:hover{
 }
 .formContainer{
     max-width: 300px;
+    height: 300px;
     padding: 10px;
     background-color: white;
-}
+}/*
 .formContainer input[type=text]:focus{
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: white;
-} 
+}
+
 .formContainer input[type=text]:focus{
     background-color: #ddd;
     outline:none;
-}
+} */
 .btn{
-    background-color: #4caf50;
+    background-color: silver;
     color: white;
     padding: 16px 20px;
     border: none;

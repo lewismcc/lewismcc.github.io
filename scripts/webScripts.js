@@ -91,6 +91,7 @@ function lastEntry(){
       
 };
 //#endregion
+
 function openForm(){
     document.getElementById("popUp").style.display ="block";
 }

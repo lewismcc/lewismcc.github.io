@@ -3,7 +3,6 @@ body{
     position: relative;
     color:  rgb(204, 200, 200);
     background-color:rgb(156, 156, 156);
-   
     text-shadow: 1px 1px #757575 ;
     padding: 0;
     margin: 0;
@@ -24,6 +23,11 @@ body{
     position: relative;
     top: 40px;
 }
+.pastPage{
+    background-color: rgba(209, 106, 22, 0.8);
+    color:white;
+}
+
 a{
     font-size: 40px;
     position: relative;
@@ -42,6 +46,7 @@ a:hover{
     background-color: rgba(209, 106, 22, 0.5);
     color: white;
 }
+
 .carousel{
     max-width: 800px;
     position:relative;
