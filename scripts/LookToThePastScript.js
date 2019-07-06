@@ -1,3 +1,10 @@
+/*
+This page is linked to the look to the past page
+These functions allow the slide show to move to the next and previous slide through user interaction 
+with arrow buttons
+it displays the first image in the webpage as default
+*/
+
 $(document).ready(function(){
     showSlides(slideIndex);    
     });
