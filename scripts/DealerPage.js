@@ -6,10 +6,10 @@ This page is linked to the nearby dealers page
 $(document).ready(function(){
    $.ajax({
     type:'GET',
-    url: 'https://api.mercedes-benz.com/dealer/v1/dealers?',
+    url: 'https://api.mercedes-benz.com/dealer_tryout/v1',
     dataType: 'json',
     headers: {
-        'X-Auth-Token':'Tyt82ndiKG0AdH8TCqe001ROh7RsGOKB'
+        'X-Auth-Token':'873fd943-4fb5-4120-b7f8-3913f4defde6'
     },
     success: function(rawData){
         console.log(rawData);

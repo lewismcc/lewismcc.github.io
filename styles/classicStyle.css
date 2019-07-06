@@ -36,6 +36,9 @@ a{
     padding:12px 32px ;
     border:2px solid #757575; 
 }
+a:link{
+    color:rgb(204, 200, 200)
+}
 a:active{   
     color: rgb(204, 200, 200)
 }
@@ -46,6 +49,7 @@ a:hover{
     background-color: rgba(209, 106, 22, 0.5);
     color: white;
 }
+
 
 .carousel{
     max-width: 800px;
