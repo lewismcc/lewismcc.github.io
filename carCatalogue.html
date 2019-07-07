@@ -18,55 +18,20 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-
-
-
-
-
-
-
-
-    <div class="main">
-        <div class="container">
-            
-        </div>
-
-
-        <input type="button" value="first" class="buttonSwitcher" onclick="firstEntry()" />
-        <input type="button" value="previous" class="buttonSwitcher" onclick="previousEntry()" />
-        <input type="button" value="next" class="buttonSwitcher" onclick="nextEntry()" />
-        <input type="button" value="last" class="buttonSwitcher" onclick="lastEntry()" />
-
-        <input type="button" class="openButton" onclick="openForm()" value="Open">
-
-
-
-
-
-
-        <div class="popUp" id="popUp">
-            <form class="formContainer">
-                <h1>Suggestion?</h1>
-
-                <label for="email"><b>email</b></label>
-                <input type="text" aria-placeholder="Enter E-mail" name="email" required />
-                <br>
-                <label for= "carName"><b>have a car to add?</b></label>
-                <input type="text" aria-placeholder="Have a suggestion?" name="carName" required/> 
-                <input type="submit" class="btn" value="Submit" onlick="infoSubmit()">
-                <input type="submit" class="btn cancel" value="Close" onclick="closeForm()">
-            </form>
-        </div>
-
-
-
-    </div>
+    <main>
+        <section class="car-catalouge">
+            <output class="car-catalogue--output"></output>
+            <nav>
+                <input type="button" value="First Car" onclick="firstEntry()">
+                <input type="button" value="Previous Car" onclick="previousEntry()">
+                <input type="button" value="Next Car" onclick="nextEntry()">
+                <input type="button" value="Last Car" onclick="lastEntry()">
+            </nav>
+        </section>
+    </main>
     <footer>
-        <div class="footerBox">
-            <h3>This is a portfolio website and is purely for learning and exam purposes</h3>
-        </div>
+        <p><small>This is a portfolio website and is purely for learning and exam purposes</small></p>
     </footer>
-
     <script src="./libs/jquery-3.4.1.min.js"></script>
     <script src="./libs/jquery.csv.js"></script>
     <script src="./scripts/CataloguePage.js"></script>

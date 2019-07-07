@@ -7,50 +7,70 @@ body {
 
 
 /*
+    Global Styles
+*/
+.clear {
+    clear: both;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*
     Navigation
 */
-nav {
+body > nav {
     background: #474747;
     border: 2px solid #757575;
 }
 
-nav ul {
+body > nav ul {
     font-size: 0;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav ul li:first-child {
+body > nav ul li:first-child {
     border-left: 2px solid #757575;
 }
 
-nav ul li {
+body > nav ul li {
     margin: 0;
     padding: 0;
     display: inline-block;
     border-right: 2px solid #757575;
 }
 
-nav ul li a {
+body > nav ul li a {
     display: block;
     font-size: 32px;
     padding: 16px 24px;
     text-decoration: none;
 }
 
-nav ul li a:active,
-nav ul li a:visited,
-nav ul li a:link {
+body > nav ul li a:active,
+body > nav ul li a:visited,
+body > nav ul li a:link {
     color: #ccc8c8;
 }
 
-nav ul li a:hover {
+body > nav ul li a:hover {
     background-color: #757575;
     color: white;
 }
 
-nav ul li.active a {
+body > nav ul li.active a {
     background-color: #757575;
     color: white;
 }
@@ -60,11 +80,8 @@ nav ul li.active a {
     Main container
 */
 main {
-    min-height: calc(75vh);
-}
-
-main > header {
     margin: 96px 0 0;
+    min-height: calc(75vh);
 }
 
 main > header > h1 {
@@ -76,58 +93,69 @@ main > header img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cataloguePage{
-    background-color: #757575;
-    color: white;
-    border: 3px solid #808080;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.buttonSwitcher{
-    background-image: url('../images/brushed-Aluminium.jpg');
-    height: 50px;
-    width: 100px;
-    font-size: 20px;
+/*
+    Car Catalouge Page
+*/
+.car-catalouge input[type="button"] {
+    background: url("../images/brushed-Aluminium.jpg");
     color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    margin: 0 5px 0;
+    min-width: 150px;
+    padding: 10px 10px;
 }
-.catalogueImage{
-    width: 1000px;
-    height: 600px;
+
+.car-catalouge img {
+    max-width:100%;
+    max-height:100%;
 }
+
+.car-catalouge .car {
+    margin:  0 auto;
+    width: 60%;
+}
+
+.car-catalouge dl {
+    margin:  0 0 0 40px;
+    text-align: left;
+}
+
+.car-catalouge dl dt:not(:first-child) {
+    margin-top: 20px;
+}
+
+.car-catalouge dl dt {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.car-catalouge dl dd {
+    margin: 5px 0 0 10px;
+}
+
+.car-catalouge nav {
+    margin: 30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .suggestionButton{
     position: absolute;
     bottom:0;
     right:10px;
 }
-.carDiv{
-    text-align: center;
-}
+
 .openButton{
     background-color:#555;
     color: whitesmoke;
