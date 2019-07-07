@@ -1,56 +1,66 @@
 body{
     height:100%;
     position: relative;
-    color:  rgb(204, 200, 200);
+    color: rgb(153, 122, 122);
     background-color:rgb(156, 156, 156);
-    text-shadow: 1px 1px #757575 ;
     padding: 0;
     margin: 0;
-    
-
+}.main{
+    position: relative;
+    top: 40px;
+    padding-bottom:100px;
 }
-.navMenu {
+/*
+nav menu
+*/
+.navMenu{
     text-align: center;
     position: relative;
     background-image: url("../images/wood-texture.jpg");
     background-size: cover;
     background-color: rgb(98, 83, 83);
     padding:12px ;
-    border: 3px solid #757575;
+    border: 3px outset #693707;
     margin: 0px;
     left:0px;
+    font-style: oblique;
 }
-.main{
-    position: relative;
-    top: 40px;
-    padding-bottom:100px;
-}
-.pastPage{
-    background-color: rgba(209, 106, 22, 0.8);
-    color:white;
-}
-
-a{
+a{  
+    color: #600000;
     font-size: 40px;
     position: relative;
     margin: -2.5px;
     text-decoration:none;
     padding:12px 32px ;
-    border:2px solid #757575; 
+    border:2px none #4b2c04; 
+    border-right: 2px #600000 solid;
+    border-left: 2px #600000 solid;    
 }
 a:link{
-    color:rgb(204, 200, 200)
+    color: #e00b0b;
+    text-shadow: 1px 1px #b10606;
 }
 a:active{   
-    color: rgb(204, 200, 200)
+    color: #600000;
+    text-shadow: 1px 1px #b10606;
 }
 a:visited{
-    color: rgb(204, 200, 200);
+    color: #600000;
+    text-shadow: 1px 1px #b10606;
 }
 a:hover{
     background-color: rgba(209, 106, 22, 0.5);
-    color: white;
+    color: #501414;
+    text-shadow: 1px 1px #c5c4c4;
 }
+.pastPage{
+    background-color: rgba(209, 106, 22, 0.8);
+    color:white;
+}
+/*
+nav menu
+*/
+
 .carousel{
     max-width: 800px;
     position:relative;
@@ -126,8 +136,8 @@ img{
 .footerBox{
    position:relative; 
    bottom:0;
-   text-align: center;
-   background-color: #604040;
+   text-align:center;
+   background-color:#604040;
    padding: 0;
    height:50px;
    color:white;

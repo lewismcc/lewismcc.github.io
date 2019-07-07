@@ -31,14 +31,20 @@
         <div class="popUp" id="popUp">
             <form class="formContainer">
                 <h1>Suggestion?</h1>
-
-                <label for="email"><b>email</b></label>
-                <input type="text" aria-placeholder="Enter E-mail" name="email" required />
+                <div class="formBoxes">
+                <label for="email" ><b>email</b></label>
                 <br>
+                <input type="text"  aria-placeholder="Enter E-mail" name="email" required />
+                </div>
+                <div class="formBoxes">
                 <label for= "carName"><b>have a car to add?</b></label>
-                <input type="text" aria-placeholder="Have a suggestion?" name="carName" required/> 
+                <br>
+                <input type="text" aria-placeholder="Have a suggestion?" name="carName" required/>
+                </div>
+                <div class="formButtons"> 
                 <input type="submit" class="btn" value="Submit" onlick="infoSubmit()">
                 <input type="submit" class="btn cancel" value="Close" onclick="closeForm()">
+                </div>
             </form>
         </div>
     </div>
