@@ -14,7 +14,7 @@ body{
     position: relative;
     background-image: url("../images/wood-texture.jpg");
     background-size: cover;
-    background-color: rgb(105, 92, 92);
+    background-color: rgb(98, 83, 83);
     padding:12px ;
     border: 3px solid #757575;
     margin: 0px;
@@ -115,6 +115,8 @@ img{
     position: relative;
     top: 120px;
     text-align: center;
+   padding-bottom:150px;
+
 }
 .envelopeImg{
     width: 50%;
@@ -122,13 +124,11 @@ img{
     filter: sepia(70%);
 }
 .footerBox{
-    position: relative;
-    padding: 40 20 40 20;
-    height:50px;
-    margin-top:-50px;
-    top:100px ;
-    bottom: 0;
-    color: White;
-    text-align: center;
-    display:block;
+   position:relative; 
+   bottom:0;
+   text-align: center;
+   background-color: #604040;
+   padding: 0;
+   height:50px;
+   color:white;
 }
