@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./libs/jquery-3.4.1.min.js"></script>
-    <script src="./libs/jquery.csv.js"></script>
-    <script src="./scripts/CataloguePage.js"></script>
+    <title>Car Catalogue - Mercedes-Benz Unofficial Fansite</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/stylePage1.css">
-    <title>Car Catalogue</title>
 </head>
 <body>
-    <nav class="navMenu carCatalogue">
-        <a href="index.html">Home</a>
-        <a href="carCatalogue.html" class="cataloguePage">Car Catalogue</a>
-        <a href="nearbyDealers.html">near by Dealers</a>
-        <a href="lookToThePast.html">A look to the past</a>
-        <a href="about.html">About</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="carCatalogue.html">Car Catalogue</a></li>
+            <li><a href="nearbyDealers.html">Near by Dealers</a></li>
+            <li><a href="lookToThePast.html">A look to the past</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </nav>
+
+
+
+
+
+
+
+
     <div class="main">
         <div class="container">
             
         </div>
+
+
         <input type="button" value="first" class="buttonSwitcher" onclick="firstEntry()" />
         <input type="button" value="previous" class="buttonSwitcher" onclick="previousEntry()" />
         <input type="button" value="next" class="buttonSwitcher" onclick="nextEntry()" />
         <input type="button" value="last" class="buttonSwitcher" onclick="lastEntry()" />
 
         <input type="button" class="openButton" onclick="openForm()" value="Open">
+
+
+
+
+
+
         <div class="popUp" id="popUp">
             <form class="formContainer">
                 <h1>Suggestion?</h1>
@@ -41,11 +57,18 @@
                 <input type="submit" class="btn cancel" value="Close" onclick="closeForm()">
             </form>
         </div>
+
+
+
     </div>
     <footer>
         <div class="footerBox">
             <h3>This is a portfolio website and is purely for learning and exam purposes</h3>
         </div>
     </footer>
+
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/CataloguePage.js"></script>
 </body>
 </html>
