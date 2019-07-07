@@ -11,7 +11,7 @@ body{
 }
 .navMenu {
     text-align: center;
-    position: sticky;
+    position: relative;
     background-image: url("../images/wood-texture.jpg");
     background-size: cover;
     background-color: rgb(105, 92, 92);
@@ -23,6 +23,7 @@ body{
 .main{
     position: relative;
     top: 40px;
+    padding-bottom:100px;
 }
 .pastPage{
     background-color: rgba(209, 106, 22, 0.8);
@@ -114,9 +115,20 @@ img{
     position: relative;
     top: 120px;
     text-align: center;
-    bottom:100px;
 }
 .envelopeImg{
-    width: 60%;
-    height: 500px;
+    width: 50%;
+    height: 400px;
+    filter: sepia(70%);
+}
+.footerBox{
+    position: relative;
+    padding: 40 20 40 20;
+    height:50px;
+    margin-top:-50px;
+    top:100px ;
+    bottom: 0;
+    color: White;
+    text-align: center;
+    display:block;
 }

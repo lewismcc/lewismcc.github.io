@@ -20,6 +20,7 @@ body{
 .main{
     position: relative;
     top: 40px;
+    padding-bottom:100px;
 }
 a{
     font-size: 40px;
@@ -115,19 +116,7 @@ a:hover{
     height: 300px;
     padding: 10px;
     background-color: white;
-}/*
-.formContainer input[type=text]:focus{
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: white;
 }
-
-.formContainer input[type=text]:focus{
-    background-color: #ddd;
-    outline:none;
-} */
 .btn{
     background-color: silver;
     color: white;
@@ -147,4 +136,10 @@ a:hover{
 }
 .open-button:hover{
     opacity:1;
+}
+.footerBox{
+    position: fixed;
+    bottom: 0;
+    color: White;
+    text-align: center;
 }
