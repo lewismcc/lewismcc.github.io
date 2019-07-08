@@ -4,7 +4,7 @@ the navigation controls. it also handles opening and closing of the form box
  */
 //this function pulls the information out of the csv file and puts all of the information into json objects
 var carDisplay;
-$(document).ready(function(){ 
+$(document).ready(function() { 
     $.ajax({
         type:"get",
         url:"./data/carInfo.csv",
@@ -23,7 +23,7 @@ $(document).ready(function(){
 //first, previous, next and last entry
 //#region 
 function firstEntry(){
-    $(".container").empty();
+    $(".car-catalogue--output").empty();
     i=0;
     postInfo(carDisplay,i);      
 };
@@ -31,39 +31,62 @@ function previousEntry(){
     if(i > 0){
     i = i-1;
     }
-    $(".container").empty();
+    $(".car-catalogue--output").empty();
     postInfo(carDisplay,i)     
 };
 function nextEntry(){
     if (i < carDisplay.length -1){   
     i = i+1;
     }
-    $(".container").empty();
+    $(".car-catalogue--output").empty();
     postInfo(carDisplay, i)
 };
 function lastEntry(){
-    $(".container").empty();
+    $(".car-catalogue--output").empty();
     i = carDisplay.length - 1;
     postInfo(carDisplay,i);      
 };
+
 //This is the function that injects the information into the html and allows it be displayed 
-function postInfo(carDisplay, i){
-    let carDiv = $("<div>", {"class":"carDiv"});
-    let carModel = $("<h1>").append("Car Model: "+carDisplay[i].model);
-    let carImg = $("<img>", {"class": "catalogueImage", "src": "./images/catalogueImages/"+carDisplay[i].image});
-    let carHp = $("<h2>").append("Power Output: "+ carDisplay[i].horsepower);    
-    let carSize =$("<h2>").append("Engine size: "+carDisplay[i].displacement);
-    let carGearbox =$("<h2>").append("GearBox: "+carDisplay[i].transmission);
-    let carDrive =$("<h2>").append("DriveTrain: "+carDisplay[i].drivetrain);
-    let carYear=$("<h2>").append("Year production began: " + carDisplay[i].yearproduced)
-    $(carDiv).append(carModel, carImg, carHp, carSize, carGearbox,carDrive, carYear);
-    $(".container").append(carDiv);    
+function postInfo(carDisplay, i) {
+
+    var outputContent =
+    "<div class='car'>"
+        + "<h1>Car Model: " + carDisplay[i].model + "</h1>"
+        + "<div class='left'>"
+            + "<img src='./images/catalogueImages/" + carDisplay[i].image + "' alt='" + carDisplay[i].model + "'>"
+        + "</div>"
+        + "<div class='right'>"
+            + "<dl>"
+                + "<dt>Power Output</dt>"
+                + "<dd>" + carDisplay[i].horsepower + "</dd>"
+                + "<dt>Engine Size</dt>"
+                + "<dd>" + carDisplay[i].displacement + "</dd>"
+                + "<dt>Gearbox</dt>"
+                + "<dd>" + carDisplay[i].transmission + "</dd>"
+                + "<dt>Drivetrain</dt>"
+                + "<dd>" + carDisplay[i].drivetrain + "</dd>"
+                + "<dt>Year production began</dt>"
+                + "<dd>" + carDisplay[i].yearproduced + "</dd>"
+            + "</dl>"
+        + "</div>"
+        + "<div class='clear'></div>"
+    + "</div>";
+
+    $(".car-catalogue--output").append(outputContent);
+
 };
 //#endregion
+
 //These functions handle the opening and closing of the of the form box
-function openForm(){
-    document.getElementById("popUp").style.display ="block";
+function openForm() {
+
+    document.getElementById("pop-up").style.display = "block";
+
 }
-function closeForm(){
-    document.getElementById("popUp").style.display ="none";
+
+function closeForm() {
+
+    document.getElementById("pop-up").style.display ="none";
+
 }
