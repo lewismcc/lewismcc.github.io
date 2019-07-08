@@ -2,7 +2,6 @@ body {
     color: #ccc8c8;
     background: #323232;
     text-align: center;
-    text-shadow: 1px 1px #757575;
 }
 
 
@@ -13,18 +12,22 @@ body {
     clear: both;
 }
 
-.left,
+/* .left,
 .right {
     width: 50%;
 }
+ */
 
 .left {
     float: left;
+    width: 70%;
 }
 
 .right {
     float: right;
+    width: 30%;
 }
+
 
 /*
     Navigation
@@ -41,15 +44,15 @@ body > nav ul {
     text-align: center;
 }
 
-body > nav ul li:first-child {
-    border-left: 2px solid #757575;
-}
-
 body > nav ul li {
     margin: 0;
     padding: 0;
     display: inline-block;
     border-right: 2px solid #757575;
+}
+
+body > nav ul li:first-child {
+    border-left: 2px solid #757575;
 }
 
 body > nav ul li a {
@@ -138,6 +141,52 @@ main > header img {
 .car-catalouge nav {
     margin: 30px 0 0;
 }
+
+
+/*
+    Look To The Past Page
+*/
+.subpage-look-to-the-past > nav {
+    background: url("../images/wood-texture.jpg");
+    background-size: cover;
+    border: 2px outset #693707;
+}
+
+.subpage-look-to-the-past > nav ul li {
+    border-right: 2px #600000 solid;   
+}
+
+.subpage-look-to-the-past > nav ul li:first-child {
+    border-left: 2px #600000 solid;    
+}
+
+.subpage-look-to-the-past > nav ul li a {
+    font-style: oblique;
+}
+
+.subpage-look-to-the-past > nav ul li a:active,
+.subpage-look-to-the-past > nav ul li a:visited,
+.subpage-look-to-the-past > nav ul li a:link {
+    color: #e00b0b;
+}
+
+.subpage-look-to-the-past > nav ul li a:hover,
+.subpage-look-to-the-past > nav ul li.active a {
+    color: #501414;
+}
+
+.subpage-look-to-the-past > nav ul li a:hover {
+    background: rgba(209, 106, 22, .5);
+    text-shadow: 1px 1px #c5c4c4;
+}
+
+.subpage-look-to-the-past > nav ul li.active a {
+    background: rgba(209, 106, 22, .8);
+}
+
+
+
+
 
 
 
