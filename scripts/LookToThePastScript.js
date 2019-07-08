@@ -6,8 +6,25 @@ it displays the first image in the webpage as default
 */
 
 $(document).ready(function(){
-    showSlides(slideIndex);    
+    showSlides(slideIndex);  
+    
+    $.ajax({
+      type: "get",
+      url: "./data/gullwing.csv",
+      datatype:"text",
+      success: function(carImages){
+        outPutImages(carImages)
+      }
+    })
+    function outPutImages(carImages){
+      console.log("win")
+    }
+
     });
+
+
+
+
     //#region 
     var slideIndex = 1;
     function plusSlides(n) { 
@@ -28,8 +45,8 @@ $(document).ready(function(){
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
         }
-        
         slides[slideIndex-1].style.display = "block";  
+        //#endregion
       };
-      //#endregion
+      
   
