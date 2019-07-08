@@ -4,7 +4,7 @@ the navigation controls. it also handles opening and closing of the form box
  */
 //this function pulls the information out of the csv file and puts all of the information into json objects
 var carDisplay;
-$(document).ready(function(){ 
+$(document).ready(function() { 
     $.ajax({
         type:"get",
         url:"./data/carInfo.csv",
@@ -79,9 +79,14 @@ function postInfo(carDisplay, i) {
 //#endregion
 
 //These functions handle the opening and closing of the of the form box
-function openForm(){
-    document.getElementById("popUp").style.display ="block";
+function openForm() {
+
+    document.getElementById("pop-up").style.display = "block";
+
 }
-function closeForm(){
-    document.getElementById("popUp").style.display ="none";
+
+function closeForm() {
+
+    document.getElementById("pop-up").style.display ="none";
+
 }

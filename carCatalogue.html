@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="subpage subpage-car-catalogue">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,7 +19,7 @@
         </ul>
     </nav>
     <main>
-        <section class="car-catalouge">
+        <section>
             <output class="car-catalogue--output"></output>
             <nav>
                 <input type="button" value="First Car" onclick="firstEntry()">
@@ -28,6 +28,25 @@
                 <input type="button" value="Last Car" onclick="lastEntry()">
             </nav>
         </section>
+        <aside>
+            <input type="submit" value="Open" onclick="openForm()">
+            <div id="pop-up">
+                <h1>Suggestion?</h1>
+                <form action="">
+                    <label>Email
+                        <input type="email" required="required" placeholder="Enter your email">
+                    </label>
+                    <label>Have a car to add?
+                        <input type="text" required="required" placeholder="Have a suggestion?">
+                    </label>
+                    <div>
+                        <input type="submit" value="Submit" onlick="infoSubmit()">
+                        <input type="submit" value="Close" onclick="closeForm()">
+                    </div>
+                </form>
+            </div>
+
+        </aside>
     </main>
     <footer>
         <p><small>This is a portfolio website and is purely for learning and exam purposes</small></p>
