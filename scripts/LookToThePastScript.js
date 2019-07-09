@@ -4,24 +4,35 @@ These functions allow the slide show to move to the next and previous slide thro
 with arrow buttons
 it displays the first image in the webpage as default
 */
-
 $(document).ready(function(){
-    showSlides(slideIndex);  
+    
     
     $.ajax({
       type: "get",
       url: "./data/gullwing.csv",
       datatype:"text",
-      success: function(carImages){
-        outPutImages(carImages)
+      success:function(rawImages){
+        outPutImages(rawImages)
       }
     })
-    function outPutImages(carImages){
-      console.log("win")
+    function outPutImages(rawImages){
+      carImages = $.csv.toObjects(rawImages)
+      carouselImages(carImages);
     }
 
+    showSlides(slideIndex);  
     });
-
+    function carouselImages(carImages){
+      console.log(carImages);
+      for(i =0 ; i < carImages.length; i++){
+        var outPutContent = 
+          "<div class='myslides'>"+
+          "<img class='imageBoxGull' src='./images/gullwingImages/"+carImages[i].image +">"+
+          "</div>";
+          console.log(outPutContent);
+          $(".carousel").append(outPutContent);
+      }
+    }
 
 
 
@@ -29,6 +40,7 @@ $(document).ready(function(){
     var slideIndex = 1;
     function plusSlides(n) { 
         showSlides(slideIndex += n);
+        console.log("plus slide")
       }
       function currentSlide(n) {
         showSlides(slideIndex = n);
