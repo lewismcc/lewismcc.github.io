@@ -4,6 +4,7 @@ These functions allow the slide show to move to the next and previous slide thro
 with arrow buttons
 it displays the first image in the webpage as default
 */
+var outPutContent;
 $(document).ready(function(){
     
     
@@ -25,14 +26,17 @@ $(document).ready(function(){
     function carouselImages(carImages){
       console.log(carImages);
       for(i =0 ; i < carImages.length; i++){
-        var outPutContent = 
-          "<div class='myslides'>"+
-          "<img class='imageBoxGull' src='./images/gullwingImages/"+carImages[i].image +">"+
-          "</div>";
-          console.log(outPutContent);
-          $(".carousel").append(outPutContent);
+        // outPutContent = 
+        // "<div class='mySlides fade'>"+
+        // "<img class='imageBoxGull' src='./images/gullwingImages/"+carImages[i].image +">"+
+        // "</div>";
+        let temp = $("<div>",{"class": "mySlides fade"})
+        let tempImage = $("<img>",{ "class":"imageBoxGull","src":"./images/gullwingImages"+carImages[i].image})
+        $(temp).append(tempImage);
+        console.log(tempImage);
+        $(".carousel").append(temp);
       }
-    }
+    };
 
 
 
