@@ -7,11 +7,7 @@ $(document).ready(function(){
     
    $.ajax({
     type:'GET',
-    url: 'https://api.mercedes-benz.com/dealer_tryout/v1',
-    dataType: 'json',
-    headers: {
-        'X-Auth-Token':'873fd943-4fb5-4120-b7f8-3913f4defde6',
-    },
+    url: 'https://api.mercedes-benz.com/dealer_tryout/v1/dealers/GS0000275?apikey=Tyt82ndiKG0AdH8TCqe001ROh7RsGOKB',
     success: function(rawData){
         console.log(rawData);
         console.log("success")
