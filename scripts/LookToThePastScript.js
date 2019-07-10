@@ -4,7 +4,6 @@ These functions allow the slide show to move to the next and previous slide thro
 with arrow buttons
 it displays the first image in the webpage as default
 */
-var outPutContent;
 $(document).ready(function(){
     
     
@@ -17,52 +16,36 @@ $(document).ready(function(){
       }
     })
     function outPutImages(rawImages){
-      carImages = $.csv.toObjects(rawImages)
-      carouselImages(carImages);
-    }
-
-    showSlides(slideIndex);  
+      window.currentSlideIndex = 0;
+      window.carImages = $.csv.toObjects(rawImages)
+      carouselImages();
+    }  
     });
-    function carouselImages(carImages){
-      console.log(carImages);
-      for(i =0 ; i < carImages.length; i++){
-        // outPutContent = 
-        // "<div class='mySlides fade'>"+
-        // "<img class='imageBoxGull' src='./images/gullwingImages/"+carImages[i].image +">"+
-        // "</div>";
-        let temp = $("<div>",{"class": "mySlides fade"})
-        let tempImage = $("<img>",{ "class":"imageBoxGull","src":"./images/gullwingImages"+carImages[i].image})
-        $(temp).append(tempImage);
-        console.log(tempImage);
-        $(".carousel").append(temp);
+    function carouselImages(){
+      $("#carousel-image").html("<img src='./images/gullwingImages/"+carImages[currentSlideIndex].image +"'>");
+
+    }
+    $("#previous-slide").click(function(){
+      currentSlideIndex--;
+      if(currentSlideIndex < 0){
+        currentSlideIndex = carImages.length -1;
       }
-    };
+    
+      carouselImages();
+    })
+    $("#next-slide").click(function(){
+      currentSlideIndex++;
+      if(currentSlideIndex == carImages.length ){
+        currentSlideIndex =0;
+      }
+      else if(currentSlideIndex > carImages.length -1){
+        currentSlideIndex--;
+      }
+      carouselImages();
+    })
 
 
 
     //#region 
-    var slideIndex = 1;
-    function plusSlides(n) { 
-        showSlides(slideIndex += n);
-        console.log("plus slide")
-      }
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      function showSlides(n) {
-        var i;
-        var slides= document.getElementsByClassName("mySlides");
-        if (n > slides.length){
-            slideIndex = 1
-        }    
-        if (n < 1){
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slides[slideIndex-1].style.display = "block";  
-        //#endregion
-      };
-      
+    
   

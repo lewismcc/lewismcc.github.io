@@ -251,17 +251,21 @@ main > header img {
     background: rgba(209, 106, 22, .8);
 }
 
-.carousel{
-    max-width: 800px;
-    position:relative;
-    margin: auto;
+
+
+.subpage-look-to-the-past .carousel #carousel-image{
+    width: 100px;
+    height:250px;
+
+} 
+.subpage-look-to-the-past.carousel .previous{
+    position: absolute;
+    left:0;
 }
-.mySlides{
-    display:none;
-}
+
+
 .previous, .next{
     cursor: pointer;
-    position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -306,8 +310,4 @@ main > header img {
 @keyframes fade{
     from {opacity: .4}
     to {opacity: 1}
-}
-img{
-    width: 80%;
-    height:450px;
 }
