@@ -305,6 +305,6 @@ main > header img {
     height: 350px;
     width: 500px;
     text-align: center;
-    filter: sepia(70%);
+    filter: sepia(80%), blur(1%);
 }
 

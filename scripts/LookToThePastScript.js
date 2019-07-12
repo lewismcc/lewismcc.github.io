@@ -16,7 +16,7 @@ $(document).ready(function(){
       }
     })
     function outPutImages(rawImages){
-      window.currentSlideIndex = 0;
+      window.currentSlideIndex = 2;
       window.carImages = $.csv.toObjects(rawImages)
       carouselImages();
     }  
