@@ -250,48 +250,50 @@ main > header img {
 .subpage-look-to-the-past > nav ul li.active a {
     background: rgba(209, 106, 22, .8);
 }
-.carousel .display-img{
-    width: 50%;
-    height:450px;
 
-} 
-.carousel .previous{
+.carousel {
+    margin: 0 auto;
     position: relative;
-    right:25%;
-    top: 20%;
-    margin-top: -22px;
-}
-.carousel .next{
-    position: relative;
-    right:-25%;
-    border-radius: 3px 0px;
+    max-width: 50%;
 }
 
-.carousel .previous, .next{
-    cursor: pointer;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: .9s ease;
+.carousel #carousel-image img {
+    height: 450px;
+    width: 100%;
+}
+
+.carousel nav a {
     border-radius: 0px 3px;
-    user-select: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transition: .9s ease;
 }
 
-.carousel .previous:hover, .next:hover{
+.carousel nav a:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-.carousel .active{
+.carousel a#previous-slide {
+    left: -42px;
+}
+
+.carousel a#next-slide {
+    right : -42px;
+}
+
+.carousel .active {
     background-color: #717171;
 }
-.carousel .fade{
+.carousel .fade {
     animation-name:fade;
     animation-duration: 1.5s; 
 }
-@keyframes fade{
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
@@ -305,3 +307,4 @@ main > header img {
     text-align: center;
     filter: sepia(70%);
 }
+

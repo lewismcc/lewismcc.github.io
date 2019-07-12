@@ -22,7 +22,10 @@ $(document).ready(function(){
     }  
     });
     function carouselImages(){
-      $("#carousel-image").html("<img class='display-img' src='./images/gullwingImages/"+carImages[currentSlideIndex].image +"'>");
+
+      let content = "<img class='display-img' src='./images/gullwingImages/"+carImages[currentSlideIndex].image +"'>";
+
+      $("#carousel-image").html(content);
 
     }
     $("#previous-slide").click(function(){
