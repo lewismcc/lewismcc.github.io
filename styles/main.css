@@ -99,7 +99,15 @@ main > header img {
     width: 400px;
 }
 
-
+/*
+    Index/home Page
+*/
+.subpage-index .history p{
+    font-family: 'Old Standard TT', serif;
+}
+.subpage-index .history h1{
+    font-family: 'Old Standard TT', serif;
+}
 /*
     Car Catalouge Page
 */
@@ -305,6 +313,6 @@ main > header img {
     height: 350px;
     width: 500px;
     text-align: center;
-    filter: sepia(80%), blur(1%);
+    filter: sepia(50%);
 }
 
