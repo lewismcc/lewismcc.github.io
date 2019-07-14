@@ -21,6 +21,7 @@ $(document).ready(function () {
     window.carImages = $.csv.toObjects(rawImages)
     carouselImages();
   }
+
   $("#animation-image").click(function () {
     console.log("running animation");
     // var outputVideo=
@@ -32,10 +33,8 @@ $(document).ready(function () {
     $(".video-box").animate({
       height: "toggle",
       effect: ""
-
-      
     });
-  })
+  });
 
 });
 
