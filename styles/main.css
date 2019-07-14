@@ -313,11 +313,12 @@ main > header img {
     font-family: 'Vast Shadow', cursive;
     font-style: italic;
 }
-
 .subpage-look-to-the-past .envelopeImg{
     height: 350px;
     width: 500px;
     text-align: center;
     filter: sepia(50%);
 }
-
+.subpage-look-to-the-past .video-box{
+    display:none;
+}

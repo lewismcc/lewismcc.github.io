@@ -23,16 +23,15 @@ $(document).ready(function () {
   }
   $("#animation-image").click(function () {
     console.log("running animation");
-    var outputVideo=
-    "<div class='video-box'>"+
-    "<video width='500px' height='350px' controls>"+
-    "<source src='./images/history-clip.mp4' type='video/mp4'>"+
-    +"</div>";
+    // var outputVideo=
+    // "<div class='video-box'>"+
+    // "<video width='500px' height='350px' controls>"+
+    // "<source src='./images/history-clip.mp4' type='video/mp4'>"+
+    // +"</div>";
     //$(".amination-image").append(outputVideo);  
     $(".video-box").animate({
       height: "toggle",
-      top:"0px",
-      left: "0px"
+      effect: ""
 
       
     });
