@@ -305,10 +305,15 @@ main > header img {
     from {opacity: .4}
     to {opacity: 1}
 }
-
-.subpage-look-to-the-past .envelopeDiv {
-   
+.subpage-look-to-the-past .blurb p{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
 }
+.subpage-look-to-the-past .blurb h2{
+    font-family: 'Vast Shadow', cursive;
+    font-style: italic;
+}
+
 .subpage-look-to-the-past .envelopeImg{
     height: 350px;
     width: 500px;

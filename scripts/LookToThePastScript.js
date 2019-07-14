@@ -26,9 +26,16 @@ $(document).ready(function () {
     var outputVideo=
     "<div class='video-box'>"+
     "<video width='500px' height='350px' controls>"+
-    "<source src='history-clip.mp4' type='video/mp4'>"+
+    "<source src='./images/history-clip.mp4' type='video/mp4'>"+
     +"</div>";
-    $(".amination-image").append(outputVideo);   
+    //$(".amination-image").append(outputVideo);  
+    $(".video-box").animate({
+      height: "toggle",
+      top:"0px",
+      left: "0px"
+
+      
+    });
   })
 
 });
