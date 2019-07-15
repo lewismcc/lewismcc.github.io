@@ -1,3 +1,4 @@
+$(document).ready(function(){
 if('serviceWorker' in navigator){
     window.addEventListener('load', () =>{
         navigator.serviceWorker
@@ -5,5 +6,6 @@ if('serviceWorker' in navigator){
         .then(reg => console.log('service worked registered'))
         .catch(err => console.log('service worker: Error:  ${err}'))
 
-    } )
+    })
 }
+})
