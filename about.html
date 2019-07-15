@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body clss="subpage-about">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="carCatalogue.html">Car Catalogue</a></li>
-            <li><a href="nearbyDealers.html">Near by Dealers</a></li>
+            <li><a href="nearbyDealers.html">Nearby Dealers</a></li>
             <li><a href="lookToThePast.html">A look to the past</a></li>
             <li class="active"><a href="about.html">About</a></li>
         </ul>
@@ -21,15 +21,39 @@
     <main>
         <section>
             <h1>
-
+                About the author!
             </h1>
+            <h2>
+                Hi, im Lewis i'm a software development apprentice in dundalk
+            </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.319873981558!2d-6.379714767888574!3d53.997814381458994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7794d2bbeb48f5e1!2sRSTC+Regional+Skills+%26+Training+Centre!5e0!3m2!1sen!2sie!4v1563217927362!5m2!1sen!2sie"
+                width="450" height="400" frameborder="4" style="border:3">
+            </iframe>
             <p>
-                
+                This is the regional skills and training center where i do my in class training <br>
+                The tutor is **** ******** <br>
+                The company that is employing me is also based nearby in dundalk <br>
             </p>
+
+            <h1>
+                Where to find me 
+            </h1>
+            <div class="drop-down">
+                <input type="button" class="dropbtn" value="drop-down"/>
+                <div class="dropdown-content">
+                    <a href ="#">github</a>
+                    <a href = "#">linkedin</a>
+                    <a href="#">steam</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p><small>This is a portfolio website and is purely for learning and exam purposes</small></p>
     </footer>
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/callCache.js"></script>
 </body>
 </html>

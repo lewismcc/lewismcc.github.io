@@ -336,3 +336,17 @@ main > header img {
     top: 0;
     width: 500px;
 }
+/*
+    About page
+*/
+.subpage-about .dropbtn{
+    background: #4caf50;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    border:none;
+}
+.subpage-about .drop-down{
+    position: relative;
+    display:inline-block;
+}
