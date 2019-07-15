@@ -1,20 +1,9 @@
-/*
-This page is linked to the nearby dealers page
+$(document).ready(function($) {
 
-*/
+	// TODO: Get the user geolocation
+	// TODO: What if the user has geolocation disabled?
 
-$(document).ready(function(){
-    
-   $.ajax({
-    type:'GET',
-    url: 'https://api.mercedes-benz.com/dealer_tryout/v1',
-    dataType: 'json',
-    headers: {
-        'X-Auth-Token':'873fd943-4fb5-4120-b7f8-3913f4defde6',
-    },
-    success: function(rawData){
-        console.log(rawData);
-        console.log("success")
-    }
-    })
-})
+	// TODO: Make jQuery AJAX request to the api.php file
+	// TODO: Feed the jQuery AJAX request with GPS coordinates
+	
+});
