@@ -339,14 +339,37 @@ main > header img {
 /*
     About page
 */
-.subpage-about .dropbtn{
-    background: #4caf50;
-    color:white;
-    padding:16px;
-    font-size:16px;
-    border:none;
-}
-.subpage-about .drop-down{
-    position: relative;
-    display:inline-block;
-}
+ .authorDetails .drop-button {
+     background-color: rgb(190, 190, 190);
+     color: rgb(31, 30, 30);
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+ }
+ .authorDetails .drop-down {
+     position: relative;
+     display: inline-block;
+ }
+ .authorDetails .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: rgb(192, 189, 189);
+     min-width: 60px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+ .authorDetails .dropdown-content a {
+     color: #505050;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+ }
+ .authorDetails .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+ .authorDetails .drop-down:hover .dropdown-content {
+     display: block;
+ }
+ .authorDetails .drop-down:hover .drop-button {
+     background:  rgb(128, 127, 127);
+ }
