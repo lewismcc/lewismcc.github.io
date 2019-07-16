@@ -54,12 +54,19 @@ $(document).ready(function($) {
       url: "./data/dealers.json",
       type: "GET",
       dataType: "json",
+      success:function(garageInfo){
+        displayInfo(garageInfo);
+        console.log(garageInfo)
+    }
+   
+    
       // TODO: Change to production version
       // data: {
       //   "latitude": lat,
       //   "longitude": lon
       // }
     })
+     
     .done(function(responseData) {
 
       // TODO: Sky is the limit, Go Lewis!
@@ -72,5 +79,8 @@ $(document).ready(function($) {
 
     });
   };
-
+  function displayInfo(garageInfo){
+    console.log(garageInfo);
+    
+}  
 });
