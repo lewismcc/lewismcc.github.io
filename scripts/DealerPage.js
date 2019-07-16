@@ -1,31 +1,72 @@
-/*
-This page is linked to the nearby dealers page
+$(document).ready(function($) {
 
-*/
-var startPos;
-$(document).ready(function () {
-  var geoSuccess = function (position) {
-    startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-    navigator.geolocation.getCurrentPosition(geoSuccess);
+  /*
+    Check if the browser supports
+    the Geolocation Web API
+  */
+  if (!navigator.geolocation) {
+
+    console.log("Geolocation is not supported by your browser");
+
+  } else {
+
+    // Get user current position
+    navigator.geolocation.getCurrentPosition(GeolocationSuccess, GeolocationError);
+
   };
- 
-  var worker = new Worker('ajax_worker.js');
-  worker.postMessage('type:get/url:https://api.mercedes-benz.com/dealer_tryout/v1?apikey=873fd943-4fb5-4120-b7f8-3913f4defde6');
-  worker.addEventListener('type:get/url:https://api.mercedes-benz.com/dealer_tryout/v1?apikey=873fd943-4fb5-4120-b7f8-3913f4defde6', function (e) {
-  data = e.data;
-  console.log("worker worked!");
-  console.log(data);
-  });
-  });
 
-      //  $.ajax({
-  //   type:'GET',
-  //   url: 'https://api.mercedes-benz.com/dealer_tryout/v1/dealers?apikey=Tyt82ndiKG0AdH8TCqe001ROh7RsGOKB',
-  //   success: function(rawData){
-  //       console.log(rawData);
-  //       console.log("success");
-  //   }
-  //   });
-  
+  /*
+    Geolocation Success
+    This function handles the response
+    from Get Current Position function
+  */
+  function GeolocationSuccess(position) {
+
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+
+    CheckNearestDealer(lat, lon);
+
+  };
+
+  /*
+    Geolocation Error
+    This function handles the error
+    from Get Current Position function
+  */
+  function GeolocationError(error) {
+
+    // TODO: What if the user has geolocation disabled?
+    console.log("Geolocation failed: " + error.message);
+
+  };
+
+  /*
+    Check Nearest Dealer
+    This function makes a request to the API endpoint
+    using AJAX and handles the received data
+  */
+  function CheckNearestDealer(lat, lon) {
+
+    $.ajax({
+      url: "api.php",
+      type: "GET",
+      dataType: "json",
+      data: {
+        "latitude": lat,
+        "longitude": lon
+      }
+    })
+    .done(function(responseData) {
+
+      // TODO: Sky is the limit!
+      console.table(responseData);
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+
+      console.log("Error! " + errorThrown);
+
+    });
+  };
+});
