@@ -5,53 +5,65 @@
 	being returned in the JSON format
 */
 header("Content-type: application/json");
+header("Accept: application/json");
 
 /*
-	Set URL
+	The script will only be initialized
+	when the request is made by using GET
+	method and includes latitude and longtitude
 */
-$uri = "https://api.mercedes-benz.com/dealer_tryout/v1/dealers";
-$parameters = "apikey=Tyt82ndiKG0AdH8TCqe001ROh7RsGOKB";
+if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 
-try {
+	/*
+		Set URL parameters
+	*/
+	$uri = "https://api.mercedes-benz.com/dealer/v1/dealers";
+	$key = "5bf86c14-f7b7-4b24-8f39-26f57de01b2c";
+	$lat = urlencode($_GET["latitude"]);
+	$lon = urlencode($_GET["longitude"]);
+	$rad = 50;
 
-	// Initialize new curl object
-	$curl = curl_init();
+	try {
 
-	// Set options for the curl object
-	curl_setopt_array($curl, [
-		CURLOPT_RETURNTRANSFER => 1,
-		CURLOPT_URL => $uri . "?" . $parameters
-	]);
+		// Initialize new curl object
+		$curl = curl_init();
 
-	// Execute the request and attach
-	// the response to a variable
-	$resp = curl_exec($curl);
+		// Set options for the curl object
+		curl_setopt_array($curl, [
+			CURLOPT_RETURNTRANSFER => 1,
+			CURLOPT_URL => $uri . "?apikey=" . $key . "&latitude=" . $lat . "&longitude=" . $lon . "&radiusValue=" . $rad
+		]);
 
-	if ($resp !== FALSE) {
-		
-		// Close the request
-		curl_close($curl);
+		// Execute the request and attach
+		// the response to a variable
+		$resp = curl_exec($curl);
 
-		// Return the response
-		echo $resp;
+		if ($resp !== FALSE) {
+			
+			// Close the request
+			curl_close($curl);
 
-	} else {
+			// Return the response
+			echo $resp;
 
-		exit("The request could not be executed");
+		} else {
+
+			exit("The request could not be executed");
+
+		}
+
+	}
+	catch (exception $e) {
+
+		// Terminate the script and inform
+		// the user about what went wrong
+	    exit($e);
 
 	}
 
-}
-catch (exception $e) {
+} else {
 
-	// Terminate the script and inform
-	// the user about what went wrong
-    exit($e);
-
-}
-finally {
-
-	// echo "This script has been executed.";
+	exit("Inproper GET parameters");
 
 }
 ?>

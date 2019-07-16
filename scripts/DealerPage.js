@@ -13,7 +13,7 @@ $(document).ready(function($) {
     // Get user current position
     navigator.geolocation.getCurrentPosition(GeolocationSuccess, GeolocationError);
 
-  }
+  };
 
   /*
     Geolocation Success
@@ -25,9 +25,9 @@ $(document).ready(function($) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
 
-    console.log("Lat: " + lat + "Long: " + lon);
+    CheckNearestDealer(lat, lon);
 
-  }
+  };
 
   /*
     Geolocation Error
@@ -39,9 +39,34 @@ $(document).ready(function($) {
     // TODO: What if the user has geolocation disabled?
     console.log("Geolocation failed: " + error.message);
 
-  }
+  };
 
-	// TODO: Make jQuery AJAX request to the api.php file
-	// TODO: Feed the jQuery AJAX request with GPS coordinates
-	
+  /*
+    Check Nearest Dealer
+    This function makes a request to the API endpoint
+    using AJAX and handles the received data
+  */
+  function CheckNearestDealer(lat, lon) {
+
+    $.ajax({
+      url: "api.php",
+      type: "GET",
+      dataType: "json",
+      data: {
+        "latitude": lat,
+        "longitude": lon
+      }
+    })
+    .done(function(responseData) {
+
+      // TODO: Sky is the limit!
+      console.table(responseData);
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+
+      console.log("Error! " + errorThrown);
+
+    });
+  };
 });
