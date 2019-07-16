@@ -2,20 +2,20 @@ const cacheName = 'v1';
 
     //call install event
 self.addEventListener('install', e =>{
-    console.log('serive worker: installed');
+   // console.log('serive worker: installed');
 
    
 });
 // call activate event
 self.addEventListener('activate', e => {
-    console.log('serive worker: activated');
+    //console.log('serive worker: activated');
     //remove unwanted caches
     e.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cache => {
                     if(cache !== cacheName){
-                        console.log('service worker: clearing old cache')
+                       // console.log('service worker: clearing old cache')
                         return caches.delete(cache);
                     }
                 })
@@ -25,7 +25,7 @@ self.addEventListener('activate', e => {
 });
 //Call Fetch event
 self.addEventListener('fetch', e=> {
-    console.log('service worker: fetching');
+    //console.log('service worker: fetching');
     e.respondWith(
         fetch(e.request)
         .then(res => {
