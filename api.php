@@ -18,8 +18,12 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 		Set URL parameters
 	*/
 	$uri = "https://api.mercedes-benz.com/dealer/v1/dealers";
+<<<<<<< HEAD
 	// TODO: Change to production version
 	// $key = "aadb1119-4f52-49ed-a7c3-1a32aeccfff3";
+=======
+	$key = "//5bf86c14-f7b7-4b24-8f39-26f57de01b2c";
+>>>>>>> master
 	$lat = urlencode($_GET["latitude"]);
 	$lon = urlencode($_GET["longitude"]);
 	$rad = 50;
