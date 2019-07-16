@@ -1,0 +1,785 @@
+{
+	"dealers": [{
+		"dealerId": "GS0001860",
+		"legalName": "GILMORES KINGSCOURT LIMITED",
+		"brands": [{
+			"code": "MB",
+			"name": "Mercedes-Benz"
+		}],
+		"geoCoordinates": {
+			"latitude": 53.903332,
+			"longitude": -6.806111
+		},
+		"address": {
+			"street": "SHERCOCK ROAD  KINGSCOURT",
+			"zipCode": "A82VW71",
+			"city": "CAVAN",
+			"countryIsoCode": "IE"
+		},
+		"region": {
+			"region": "Ulster",
+			"subRegion": "Cavan"
+		},
+		"communicationChannels": {
+			"phone": "+353 42 9667126",
+			"fax": "+353 42 9667329",
+			"email": "info@gilmores.ie",
+			"website": "http://www.gilmores.ie",
+			"facebook": "https://www.facebook.com/gilmores.kingscourtmercedesbenz"
+		},
+		"functions": [{
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "SERVICE",
+				"name": "Service"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "SALES",
+				"name": "Sales"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "VAN",
+				"name": "Van"
+			},
+			"activity": {
+				"code": "SERVICE",
+				"name": "Service"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "VAN",
+				"name": "Van"
+			},
+			"activity": {
+				"code": "SALES",
+				"name": "Sales"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "PARTS",
+				"name": "Parts"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "VAN",
+				"name": "Van"
+			},
+			"activity": {
+				"code": "PARTS",
+				"name": "Parts"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "USED-VEHICLES-TRADE",
+				"name": "Used Vehicles Trade"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "VAN",
+				"name": "Van"
+			},
+			"activity": {
+				"code": "USED-VEHICLES-TRADE",
+				"name": "Used Vehicles Trade"
+			}
+		}],
+		"openingHours": [{
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "SALES",
+					"name": "Sales"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "10:00:00",
+						"until": "14:00:00"
+					}]
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "VAN",
+					"name": "Van"
+				},
+				"activity": {
+					"code": "SALES",
+					"name": "Sales"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "10:00:00",
+						"until": "14:00:00"
+					}]
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "SERVICE",
+					"name": "Service"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "16:30:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "CLOSED",
+					"periods": []
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "PARTS",
+					"name": "Parts"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "13:00:00"
+					}]
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "VAN",
+					"name": "Van"
+				},
+				"activity": {
+					"code": "PARTS",
+					"name": "Parts"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "13:00:00"
+					}]
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "VAN",
+					"name": "Van"
+				},
+				"activity": {
+					"code": "SERVICE",
+					"name": "Service"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "16:30:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "10:00:00",
+						"until": "13:00:00"
+					}]
+				}
+			}
+		}],
+		"distance": {
+			"value": 29.694005195852853,
+			"unit": "KM"
+		}
+	}, {
+		"dealerId": "GS0043804",
+		"legalName": "Prime Automotive Limited",
+		"nameAddition": "Trading as Newgate Motor Group",
+		"brands": [{
+			"code": "MB",
+			"name": "Mercedes-Benz"
+		}],
+		"geoCoordinates": {
+			"latitude": 53.659168,
+			"longitude": -6.723503
+		},
+		"address": {
+			"street": "Newgate",
+			"zipCode": "C15DE03",
+			"city": "Navan",
+			"countryIsoCode": "IE"
+		},
+		"region": {
+			"region": "Leinster",
+			"subRegion": "Meath"
+		},
+		"communicationChannels": {
+			"phone": "+353 46 902 7777",
+			"fax": "+353 46 902 1177",
+			"email": "jim@newgate.ie",
+			"website": "http://www.newgatemercedes-benz.ie"
+		},
+		"functions": [{
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "SALES",
+				"name": "Sales"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "SERVICE",
+				"name": "Service"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "PARTS",
+				"name": "Parts"
+			}
+		}, {
+			"brand": {
+				"code": "MB",
+				"name": "Mercedes-Benz"
+			},
+			"productGroup": {
+				"code": "PASSENGER-CAR",
+				"name": "Passenger Car"
+			},
+			"activity": {
+				"code": "USED-VEHICLES-TRADE",
+				"name": "Used Vehicles Trade"
+			}
+		}],
+		"openingHours": [{
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "SALES",
+					"name": "Sales"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "18:00:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "10:00:00",
+						"until": "14:00:00"
+					}]
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "SERVICE",
+					"name": "Service"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "CLOSED",
+					"periods": []
+				}
+			}
+		}, {
+			"function": {
+				"brand": {
+					"code": "MB",
+					"name": "Mercedes-Benz"
+				},
+				"productGroup": {
+					"code": "PASSENGER-CAR",
+					"name": "Passenger Car"
+				},
+				"activity": {
+					"code": "PARTS",
+					"name": "Parts"
+				}
+			},
+			"weekdays": {
+				"WEDNESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"MONDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"THURSDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SUNDAY": {
+					"status": "CLOSED",
+					"periods": []
+				},
+				"FRIDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"TUESDAY": {
+					"status": "OPEN",
+					"periods": [{
+						"from": "09:00:00",
+						"until": "17:30:00"
+					}]
+				},
+				"SATURDAY": {
+					"status": "CLOSED",
+					"periods": []
+				}
+			}
+		}],
+		"distance": {
+			"value": 43.85976119156478,
+			"unit": "KM"
+		}
+	}]
+}
