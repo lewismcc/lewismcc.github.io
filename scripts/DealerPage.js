@@ -49,17 +49,20 @@ $(document).ready(function($) {
   function CheckNearestDealer(lat, lon) {
 
     $.ajax({
-      url: "api.php",
+      // TODO: Change to production version
+      // url: "./api.php",
+      url: "./data/dealers.json",
       type: "GET",
       dataType: "json",
-      data: {
-        "latitude": lat,
-        "longitude": lon
-      }
+      // TODO: Change to production version
+      // data: {
+      //   "latitude": lat,
+      //   "longitude": lon
+      // }
     })
     .done(function(responseData) {
 
-      // TODO: Sky is the limit!
+      // TODO: Sky is the limit, Go Lewis!
       console.table(responseData);
 
     })
@@ -69,4 +72,5 @@ $(document).ready(function($) {
 
     });
   };
+
 });
