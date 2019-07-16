@@ -1,6 +1,6 @@
 body {
-    color: #ccc8c8;
-    background: #323232;
+    color: #ccc;
+    background: #333333;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ input {
     Navigation
 */
 body > nav {
-    background: #474747;
+    background: #666;
     border: 2px solid #757575;
 }
 
@@ -93,6 +93,7 @@ main {
 
 main > header > h1 {
     margin: 0 0 64px;
+    color: #fff;
 }
 
 main > header img {
@@ -106,7 +107,7 @@ main > header img {
     font-family: 'Old Standard TT', serif;
 }
 .subpage-index .history h1{
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Ranga', cursive;
 }
 /*
     Car Catalouge Page
