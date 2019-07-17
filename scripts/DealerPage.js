@@ -80,6 +80,15 @@ $(document).ready(function($) {
     });
   };
   function displayInfo(garageInfo) {
+    var weekdays = Object.entries(garageInfo.dealers[0].openingHours[0].weekdays); ;
+    var openTimes= "<br>";
+    for(i=0; i < weekdays.length;i++){
+      openTimes = openTimes
+      +"<dd>"
+      +weekdays[i][0] +" : "
+      +weekdays[i][1].status
+      +"</dd>"
+    };
     var outputContent =
       "<div class= 'garage'>"
       +"<h1> Garage Name: "+ garageInfo.dealers[0].legalName+"</h1>"
@@ -90,12 +99,8 @@ $(document).ready(function($) {
       +"<dl>"
       +"<dt>"+ garageInfo.dealers[0].address.street
       +"</dt>"
-     
-  
-      +"</dl>"
-
-      "";
-    console.log(garageInfo.dealers[0].openingHours[1].weekdays);
+      +openTimes
+      +"</dl>";
     $("#output").append(outputContent);
 
   }
