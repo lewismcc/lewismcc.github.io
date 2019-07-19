@@ -1,5 +1,4 @@
 <?php
-
 /*
 	Make sure that the response is
 	being returned in the JSON format
@@ -12,6 +11,7 @@ header("Accept: application/json");
 	when the request is made by using GET
 	method and includes latitude and longtitude
 */
+
 if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 
 	/*
@@ -22,6 +22,7 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 	$lat = urlencode($_GET["latitude"]);
 	$lon = urlencode($_GET["longitude"]);
 	$rad = 50;
+	$page = 1;
 
 	try {
 
@@ -31,7 +32,7 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 		// Set options for the curl object
 		curl_setopt_array($curl, [
 			CURLOPT_RETURNTRANSFER => 1,
-			CURLOPT_URL => $uri . "?apikey=" . $key . "&latitude=" . $lat . "&longitude=" . $lon . "&radiusValue=" . $rad
+			CURLOPT_URL => $uri . "?apikey=" . $key . "&latitude=" . $lat . "&longitude=" . $lon . "&radiusValue=" . $rad ."&pageSize="
 		]);
 
 		// Execute the request and attach

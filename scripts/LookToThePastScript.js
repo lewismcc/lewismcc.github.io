@@ -66,12 +66,3 @@ $("#next-slide").click(function () {
   }
   carouselImages();
 })
-// $("#animation-image").click(function () {
-//   console.log("running animation");
-//   var outputVideo=
-//   "<div class='video-box'>"+
-//   "<video width='500px' height='350px' controls>"+
-//   "<source src='history-clip.mp4' type='video/mp4'>"+
-//   +"</div>";
-//  // $(".amination-image")
-// })

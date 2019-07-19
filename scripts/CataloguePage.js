@@ -1,8 +1,8 @@
 /*
 This page ties into the car catalogue page and handle the displaying of info from the csv file and 
 the navigation controls. it also handles opening and closing of the form box
+This function pulls the information out of the csv file and puts all of the information into json objects
  */
-//this function pulls the information out of the csv file and puts all of the information into json objects
 var carDisplay;
 $(document).ready(function() { 
     $.ajax({
@@ -46,8 +46,12 @@ function lastEntry(){
     i = carDisplay.length - 1;
     postInfo(carDisplay,i);      
 };
-
-//This is the function that injects the information into the html and allows it be displayed 
+//#endregion
+/* 
+    This is the function that injects the information into the html and allows it be displayed 
+    It creates one variable and outputs it together as one block
+    which is re generated on every click of the navigation buttons
+*/
 function postInfo(carDisplay, i) {
 
     var outputContent =
@@ -76,7 +80,7 @@ function postInfo(carDisplay, i) {
     $(".car-catalogue--output").append(outputContent);
 
 };
-//#endregion
+
 
 //These functions handle the opening and closing of the of the form box
 function openForm() {
