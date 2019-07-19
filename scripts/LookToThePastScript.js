@@ -2,7 +2,7 @@
 This page is linked to the look to the past page
 These functions allow the slide show to move to the next and previous slide through user interaction 
 with arrow buttons
-it displays the first image in the webpage as default
+it displays the third image in the webpage as default
 */
 $(document).ready(function () {
 
@@ -21,6 +21,10 @@ $(document).ready(function () {
     window.carImages = $.csv.toObjects(rawImages)
     carouselImages();
   }
+
+/*
+  This function runs the animation that when the envelope is clicked it displays the video
+*/
 
   $("#animation-image").click(function () {
     console.log("running animation");

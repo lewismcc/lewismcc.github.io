@@ -1,3 +1,7 @@
+/*
+This is for calling the service worker js file 
+*/
+
 $(document).ready(function(){
 if('serviceWorker' in navigator){
     window.addEventListener('load', () =>{

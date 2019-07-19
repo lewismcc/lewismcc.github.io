@@ -13,7 +13,9 @@ input {
     border: none;
     cursor: pointer;
 }
-
+/*
+    Global Tags
+*/
 
 /*
     Global Styles
@@ -31,7 +33,9 @@ input {
     float: right;
     width: 30%;
 }
-
+/*
+    Global Styles
+*/
 
 /*
     Navigation
@@ -81,10 +85,11 @@ body > nav ul li.active a {
     background-color: #757575;
     color: white;
 }
-
-
 /*
-    Main container
+    Navigation
+*/
+/*
+    Main Container
 */
 main {
     margin: 96px 0 0;
@@ -99,7 +104,9 @@ main > header > h1 {
 main > header img {
     width: 400px;
 }
-
+/*
+    Main Container
+*/
 /*
     Index/home Page
 */
@@ -110,7 +117,11 @@ main > header img {
     font-family: 'Ranga', cursive;
 }
 /*
+ Index/home Page
+*/
+/*
     Car Catalouge Page
+    css for car display
 */
 .subpage-car-catalogue section input[type="button"] {
     background: url("../images/brushed-Aluminium.jpg");
@@ -124,7 +135,7 @@ main > header img {
 
 .subpage-car-catalogue section img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 .subpage-car-catalogue section .car {
@@ -154,6 +165,12 @@ main > header img {
     margin: 30px 0 0;
 }
 
+/* 
+Css for car display
+*/
+/* 
+css for pop up form buttons
+*/
 .subpage-car-catalogue aside > input[type="submit"] {
     background: #555;
     bottom: 23px;
@@ -177,6 +194,10 @@ main > header img {
     padding: 20px 40px;
     background: #f1f1f1;
 }
+
+/*
+css for pop up web form
+*/
 
 #pop-up h1 {
     margin: 0 0 25px;
@@ -217,10 +238,13 @@ main > header img {
 #pop-up form input[type="submit"]:hover {
     opacity: 1;
 }
-
+/*
+css for pop up form
+*/
 
 /*
     Look To The Past Page
+    css for carousel
 */
 .subpage-look-to-the-past > nav {
     background: url("../images/wood-texture.jpg");
@@ -267,7 +291,7 @@ main > header img {
 }
 
 .carousel #carousel-image img {
-    height: 450px;
+    height: auto;
     width: 100%;
 }
 
@@ -288,11 +312,11 @@ main > header img {
 }
 
 .carousel a#previous-slide {
-    left: -42px;
+    left: 0px;
 }
 
 .carousel a#next-slide {
-    right : -42px;
+    right : 0px;
 }
 
 .carousel .active {
@@ -306,6 +330,14 @@ main > header img {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
+/*
+css for carousel
+*/
+/*
+css for text box
+*/
 .subpage-look-to-the-past .blurb p{
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -314,13 +346,18 @@ main > header img {
     font-family: 'Vast Shadow', cursive;
     font-style: italic;
 }
-
+/*
+css for text box
+*/
+/*
+css for animation
+*/
 .subpage-look-to-the-past #animation-image {
     position: relative;
 }
 
 .subpage-look-to-the-past .envelopeImg {
-    height: 350px;
+    height: auto;
     width: 500px;
     text-align: center;
     filter: sepia(50%);
@@ -337,6 +374,10 @@ main > header img {
     top: 0;
     width: 500px;
 }
+/*
+css for animation
+*/
+
 /*
     About page
 */
@@ -374,3 +415,57 @@ main > header img {
  .authorDetails .drop-down:hover .drop-button {
      background:  rgb(128, 127, 127);
  }
+ /*
+ media queries for mobile responsiveness 
+ */
+ @media screen and (max-width: 500px){
+    .authorDetails .location{
+        width:100%;
+    }
+
+ }
+ @media screen and (max-width: 500px) {
+    .subpage-car-catalogue .left,.right {
+        width: 100%;
+    }
+    .subpage-car-catalogue section .car {
+        width: 100%;
+        text-align: center;
+     }
+}
+@media screen and (max-width: 400px){
+    .subpage-look-to-the-past section{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .display-img{
+        width: 100%;
+       
+    }
+    .subpage-look-to-the-past .envelopeImg {
+        height: auto;
+        width: 100%;
+    }
+    .subpage-look-to-the-past .video-box{
+        width:100%;
+        left:0;
+        right:0;
+    }
+    .subpage-look-to-the-past video{
+        width:100%;
+        height:auto;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+    }
+
+}
+@media screen and(max-width: 400px){
+    .subpage-nearbyDealers .dealerWebsite{
+        width: 70%;
+        height: auto;
+    }
+}
