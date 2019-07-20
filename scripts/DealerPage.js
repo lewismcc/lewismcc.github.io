@@ -106,7 +106,7 @@ $(document).ready(function($) {
       "<h1> Garage Name: " + garageInfo.dealers[0].legalName + "</h1>" +
       "<div class='left'>" +
       "<iframe src='" + link + "'" +
-      "width='800' height ='600' frameborder='0' style='border:0' class='dealerWebsite' allowfullscreen></iframe>" +
+      "width='650' height ='600' frameborder='0' style='border:0' class='dealerWebsite' allowfullscreen></iframe>" +
       "<div class='right'>" +
       "<dl>" +
       "<dt>" + garageInfo.dealers[0].address.street + " " + garageInfo.dealers[0].address.city +
