@@ -283,7 +283,10 @@ css for pop up form
 .subpage-look-to-the-past > nav ul li.active a {
     background: rgba(209, 106, 22, .8);
 }
-
+.subpage-look-to-the-past{
+    background: #501b1f ;
+    filter: sepia(70%);
+}
 .carousel {
     margin: 0 auto;
     position: relative;
