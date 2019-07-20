@@ -86,8 +86,13 @@ $(document).ready(function($) {
   */
 
   function displayInfo(garageInfo) {
-    var weekdays = Object.entries(garageInfo.dealers[0].openingHours[0].weekdays);;
+    var weekdays = Object.entries(garageInfo.dealers[0].openingHours[0].weekdays);
     var openTimes = "<br>";
+    var link = garageInfo.dealers[0].communicationChannels.website;
+    var tempLink = link1.slice(0,4);
+    var tempLink2 = link1.slice(4);
+    link = tempLink +"s"+tempLink2;
+    console.log(link);
 
     for (i = 0; i < weekdays.length; i++) {
       openTimes = openTimes +
@@ -96,8 +101,8 @@ $(document).ready(function($) {
         weekdays[i][1].status +
         "</dd>"
     };
-    console.log(garageInfo.dealers[0].communicationChannels.facebook);
-    link = garageInfo.dealers[0].communicationChannels.website
+    //console.log(garageInfo.dealers[0].communicationChannels.facebook);
+    //link = garageInfo.dealers[0].communicationChannels.website
     var outputContent =
       "<div class= 'garage'>" +
       "<h1> Garage Name: " + garageInfo.dealers[0].legalName + "</h1>" +
