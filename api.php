@@ -21,6 +21,7 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 		need and base it off the 
 		latitude, longitude, range and only select 1 object
 	*/
+	
 	$uri = "https://api.mercedes-benz.com/dealer/v1/dealers";
 	$key = "aadb1119-4f52-49ed-a7c3-1a32aeccfff3";
 	$lat = urlencode($_GET["latitude"]);

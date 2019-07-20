@@ -52,7 +52,7 @@ $(document).ready(function($) {
   function CheckNearestDealer(lat, lon) {
 
     $.ajax({
-      
+      //switch links for using test data
       url: "./api.php",
       //url: "./data/dealers.json",
       type: "GET",
@@ -61,7 +61,7 @@ $(document).ready(function($) {
         displayInfo(garageInfo);
         //console.log(garageInfo)
     },
-   
+    //comment out when using test data
        data: {
          "latitude": lat,
          "longitude": lon
