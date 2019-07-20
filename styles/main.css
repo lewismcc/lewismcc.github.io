@@ -250,6 +250,7 @@ css for pop up form
     background: url("../images/wood-texture.jpg");
     background-size: cover;
     border: 2px outset #693707;
+    filter: none;
 }
 
 .subpage-look-to-the-past > nav ul li {
@@ -267,7 +268,8 @@ css for pop up form
 .subpage-look-to-the-past > nav ul li a:active,
 .subpage-look-to-the-past > nav ul li a:visited,
 .subpage-look-to-the-past > nav ul li a:link {
-    color: #e00b0b;
+    color: #df0e0e;
+    text-shadow:1px 1px #800d0d
 }
 
 .subpage-look-to-the-past > nav ul li a:hover,
@@ -283,9 +285,9 @@ css for pop up form
 .subpage-look-to-the-past > nav ul li.active a {
     background: rgba(209, 106, 22, .8);
 }
-.subpage-look-to-the-past{
+.subpage-look-to-the-past {
     background: #501b1f ;
-    filter: sepia(70%);
+    filter: sepia(60%);
 }
 .carousel {
     margin: 0 auto;
