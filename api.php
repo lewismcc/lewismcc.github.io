@@ -22,11 +22,10 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 		latitude, longitude, range and only select 1 object
 	*/
 	$uri = "https://api.mercedes-benz.com/dealer/v1/dealers";
-	$key = "//5bf86c14-f7b7-4b24-8f39-26f57de01b2c";
+	$key = "5bf86c14-f7b7-4b24-8f39-26f57de01b2c";
 	$lat = urlencode($_GET["latitude"]);
 	$lon = urlencode($_GET["longitude"]);
 	$rad = 50;
-	$page = 1;
 
 	try {
 
@@ -36,7 +35,7 @@ if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 		// Set options for the curl object
 		curl_setopt_array($curl, [
 			CURLOPT_RETURNTRANSFER => 1,
-			CURLOPT_URL => $uri . "?apikey=" . $key . "&latitude=" . $lat . "&longitude=" . $lon . "&radiusValue=" . $rad ."&pageSize="
+			CURLOPT_URL => $uri . "?apikey=" . $key . "&latitude=" . $lat . "&longitude=" . $lon . "&radiusValue=" . $rad 
 		]);
 
 		// Execute the request and attach

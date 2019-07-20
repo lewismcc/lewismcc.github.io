@@ -4,7 +4,6 @@ $(document).ready(function($) {
   /*
     Check if the browser supports
     the Geolocation Web API
-
     support for people with geo location disabled
     is not implemented and is currently out of scope
   */
@@ -53,26 +52,24 @@ $(document).ready(function($) {
   function CheckNearestDealer(lat, lon) {
 
     $.ajax({
-      // TODO: Change to production version
-      // url: "./api.php",
-      url: "./data/dealers.json",
+      
+      url: "./api.php",
+      //url: "./data/dealers.json",
       type: "GET",
       dataType: "json",
       success:function(garageInfo){
         displayInfo(garageInfo);
         //console.log(garageInfo)
-    }
+    },
    
-    
-      // TODO: Change to production version
-      // data: {
-      //   "latitude": lat,
-      //   "longitude": lon
-      // }
+       data: {
+         "latitude": lat,
+         "longitude": lon
+       }
     })
      
     .done(function(responseData) {
-     // console.table(responseData);
+      console.table(responseData);
 
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
@@ -106,7 +103,7 @@ $(document).ready(function($) {
       "<h1> Garage Name: " + garageInfo.dealers[0].legalName + "</h1>" +
       "<div class='left'>" +
       "<iframe src='" + link + "'" +
-      "width='650' height ='600' frameborder='0' style='border:0' class='dealerWebsite' allowfullscreen></iframe>" +
+      "width='650' height ='400' frameborder='0' style='border:0' class='dealerWebsite' allowfullscreen></iframe>" +
       "<div class='right'>" +
       "<dl>" +
       "<dt>" + garageInfo.dealers[0].address.street + " " + garageInfo.dealers[0].address.city +
