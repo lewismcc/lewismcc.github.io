@@ -7,7 +7,7 @@ $(document).ready(function () {
         $(".m-logo").animate({
             opacity: ".01"
         }, 2500)
-        $(".m-rot").animate({
+        $(".m-logo").animate({
             opacity: "1"
         }, 2500)
     })
