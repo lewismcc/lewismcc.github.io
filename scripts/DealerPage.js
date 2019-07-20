@@ -1,8 +1,12 @@
 $(document).ready(function($) {
 
+  
   /*
     Check if the browser supports
     the Geolocation Web API
+
+    support for people with geo location disabled
+    is not implemented and is currently out of scope
   */
   if (!navigator.geolocation) {
 
@@ -68,8 +72,6 @@ $(document).ready(function($) {
     })
      
     .done(function(responseData) {
-
-      // TODO: Sky is the limit, Go Lewis!
      // console.table(responseData);
 
     })
@@ -82,7 +84,8 @@ $(document).ready(function($) {
   /*
   This takes information out of the api and then posts out 
   the location of the garage and its open status
-  it also shows the address and displays an iframe showing the website for the garage
+  it also shows the address and displays 
+  an iframe showing the website for the garage
   */
 
   function displayInfo(garageInfo) {

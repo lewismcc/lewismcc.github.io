@@ -15,7 +15,11 @@ header("Accept: application/json");
 if (isset($_GET["latitude"]) && isset($_GET["longitude"])) {
 
 	/*
-		Set URL parameters
+		This sets the url parameters
+		is takes in the uri destination as well as 
+		the paramaters that allow us to pull the information we 
+		need and base it off the 
+		latitude, longitude, range and only select 1 object
 	*/
 	$uri = "https://api.mercedes-benz.com/dealer/v1/dealers";
 	$key = "//5bf86c14-f7b7-4b24-8f39-26f57de01b2c";

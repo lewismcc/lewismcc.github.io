@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body class="subpage subpage-car-catalogue">
+    <!--
+        Navigation menu linking to all other pages
+    -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,6 +22,12 @@
         </ul>
     </nav>
     <main>
+        <!--
+            The are the navigation buttons for the car catalogue 
+            and allow the user to switch through the 
+            first, previous, next and last enntries
+            in the catalogue
+        -->
         <section>
             <output class="car-catalogue--output"></output>
             <nav>
@@ -29,10 +38,16 @@
             </nav>
         </section>
         <aside>
+            <!--
+                This section is for the pop up form and it 
+                in future iterations will post the information from the form to a pre prepared google doc 
+                for easy study and future car growth
+                google form link: https://forms.gle/e9XDwUk443DWS53D6
+            -->
             <input type="submit" value="Open" onclick="openForm()">
             <div id="pop-up">
                 <h1>Suggestion?</h1>
-                <form action="">
+                <form>     
                     <label>Email
                         <input type="email" required="required" placeholder="Enter your email">
                     </label>
@@ -40,7 +55,7 @@
                         <input type="text" required="required" placeholder="Have a suggestion?">
                     </label>
                     <div>
-                        <input type="submit" value="Submit" onlick="infoSubmit()">
+                        <input type="submit"  value="Submit" onlick="infoSubmit()">
                         <input type="submit" value="Close" onclick="closeForm()">
                     </div>
                 </form>
